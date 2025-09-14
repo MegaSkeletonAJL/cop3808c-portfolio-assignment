@@ -112,4 +112,12 @@ section#homePage div:nth-child(2) {
 
 section#homePage img {
     border-radius: 12px;
+    animation: floatTiger 2.5s ease-in-out infinite;
+}
+
+/* homepage image animation */
+@keyframes floatTiger {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
 }
