@@ -35,3 +35,41 @@ header .hero-text {
   transform: none;
   color: white;
 }
+
+
+section#homePage img {
+    object-fit: contain;
+    max-width:100%;
+    max-height:100%;
+}
+
+/* NAVIGATION BAR STYLING */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    min-height: 50px;
+    justify-content: space-around;
+    background: #8c140e;
+    background: linear-gradient(45deg,rgba(140, 20, 14, 1) 0%, rgba(16, 15, 97, 1) 50%, rgba(97, 118, 237, 1) 100%);
+    padding-top: 0px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    border-top: 2px solid rgba(255,255,255,0.5);
+}
+nav a {
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    font-size: larger;
+    padding: 0 15px;
+    font-weight: bolder;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
