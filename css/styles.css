@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    background: #050505;
+    background: linear-gradient(169deg,rgba(5, 5, 5, 1) 0%, rgba(34, 34, 46, 1) 50%, rgb(53, 50, 50) 100%);
 }
 
 
@@ -72,4 +74,42 @@ nav a:hover {
     background: rgba(255,255,255,0.1);
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+
+/* home page section */
+
+section#homePage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 75%;
+    margin: auto;
+    background: #8c140e;
+    background: linear-gradient(45deg,rgba(140, 20, 14, 1) 0%, rgba(16, 15, 97, 1) 50%, rgba(97, 118, 237, 1) 100%);
+    margin-top: 1.2%;
+    border-radius: 20px;
+
+}
+section#homePage div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f8f8f8; /* Light color for contrast */
+    padding: 20px;
+}
+
+.prof {
+    color: rgb(184, 14, 14);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    padding: 5px 15px;
+}
+
+section#homePage div:nth-child(2) {
+    padding: 20px;
+}
+
+section#homePage img {
+    border-radius: 12px;
 }
