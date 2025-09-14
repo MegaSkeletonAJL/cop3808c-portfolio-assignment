@@ -7,4 +7,31 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin: 0%;
+}
+
+/* HERO IMAGE STYLING */
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero_419269782-scaled.jpeg");
+  min-height: 20vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;             
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;             
+}
+header div.hero-image {
+    padding-bottom: 20px;
+}
+
+header .hero-text {
+  position: static;
+  transform: none;
+  color: white;
 }
