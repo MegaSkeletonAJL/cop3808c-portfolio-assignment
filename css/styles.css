@@ -109,7 +109,7 @@ section#homePage div:first-child {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #f8f8f8; /* Light color for contrast */
+    color: #f8f8f8;
     padding: 20px;
 }
 
@@ -177,6 +177,80 @@ section#projects p {
 }
 
 
+/* About Me */
+section#aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 32px 24px;
+}
+
+section#aboutMe h2 {
+    color: #f8f8f8;
+    font-size: 2em;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+section#aboutMe p {
+    color: #e0e0e0;
+    font-size: 1.15em;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* SKILLS SECTION */
+
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 18px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gridContainer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(16, 15, 97, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 10px 15px;
+    text-align: center;
+    margin-top: 2.9vh;
+    margin-bottom: 2.9vh;
+}
+
+.gridContainer > div h4 {
+    color: #f8f8f8;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.gridContainer > div {
+    color: #e0e0e0; 
+}
+.star-rating {
+    margin-top: 8px;
+    color: #ffd700;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
 
 /* homepage image animation */
 @keyframes floatImage {
