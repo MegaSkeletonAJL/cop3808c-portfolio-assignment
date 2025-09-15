@@ -332,6 +332,35 @@ section#contact {
 }
 
 
+/* Resume link styling */
+section#resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.download-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #8c140e 0%, #6176ed 100%);
+    background-size: 200% 100%;
+    background-position: left;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background-position 0.5s ease, transform 0.2s;
+    margin: 12px 0;
+}
+
+.download-link:hover {
+    background-position: right;
+    transform: scale(1.05);
+}
+
 
 /* homepage image animation */
 @keyframes floatImage {
