@@ -128,12 +128,53 @@ section#homePage img {
     animation: floatImage 2.5s ease-in-out infinite;
 }
 
+/* PROJECTS SECTION */
 section#projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
+section#projects > div {
+    min-height: 20vh;
+    max-height: 28vh;
+    padding: 12px 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(16, 15, 97, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin: 12px;
+    overflow: hidden; 
+}
+
+
+section#projects img,
+section#projects video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    margin: 8px 0;
+    object-fit: cover;
+}
+
+section#projects h3 {
+    color: #f8f8f8;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section#projects p {
+    color: #f8f8f8;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
 
 
