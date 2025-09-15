@@ -75,7 +75,17 @@ nav a:hover {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
+/* section */
+section {
+    width: 75%;
+    width: 75%;
+    margin: auto;
+    background: #8c140e;
+    background: linear-gradient(45deg,rgba(140, 20, 14, 1) 0%, rgba(16, 15, 97, 1) 50%, rgba(97, 118, 237, 1) 100%);
+    margin-top: 1.2%;
+    border-radius: 20px;
 
+}
 
 /* home page section */
 
@@ -90,6 +100,9 @@ section#homePage {
     border-radius: 20px;
 
 }
+
+
+
 section#homePage div:first-child {
     display: flex;
     flex-direction: column;
@@ -112,11 +125,20 @@ section#homePage div:nth-child(2) {
 
 section#homePage img {
     border-radius: 12px;
-    animation: floatTiger 2.5s ease-in-out infinite;
+    animation: floatImage 2.5s ease-in-out infinite;
 }
 
+section#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
 /* homepage image animation */
-@keyframes floatTiger {
+@keyframes floatImage {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-5px); }
     100% { transform: translateY(0); }
