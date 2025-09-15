@@ -20,3 +20,9 @@ const toast = {
 	},
 };
 
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // prevents the default behavior of reloading the page when a form is resubmitted
+    showToast(`Thanks for reaching out! I'll get back to you soon!`);
+
+})
