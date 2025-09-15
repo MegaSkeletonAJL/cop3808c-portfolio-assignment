@@ -252,6 +252,87 @@ section#aboutMe p {
     text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
+/* contact section */
+section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    color: #f8f8f8;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    background: #222;
+    color: #f8f8f8;
+}
+
+#contactForm button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #8c140e;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#contactForm button:hover {
+    background: #5a0e08;
+}
+
+/* toast message styling */
+.toast {
+	position: fixed;
+    bottom: 32px;
+    right: 32px;
+	margin: auto;
+	max-width: 400px;
+	background-color: #fff;
+	color: black;
+	padding: 20px;
+	border-radius: 5px;
+	border: 2px solid #e2dede;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+	visibility: hidden;
+	opacity: 0;
+	/* will cause an animation transition when class toast-show is set */
+	-moz-transition-property: opacity, top, visibility;
+	transition-property: opacity, top, visibility;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.toast-show {
+	bottom: 48px;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
 /* homepage image animation */
 @keyframes floatImage {
     0%   { transform: translateY(0); }
