@@ -70,6 +70,15 @@ nav a {
     transition: background 0.3s, box-shadow 0.3s;
 }
 
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 nav a:hover {
     background: rgba(255,255,255,0.1);
     border-radius: 6px;
